@@ -1,30 +1,100 @@
-# React + TypeScript + Vite
+# RHF Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a demo application showcasing the usage of React Hook Form with Yup for form validation. The application is built using React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Installation](#installation)
+- [Usage](#usage)
+- [Scripts](#scripts)
+- [Technologies Used](#technologies-used)
+- [Folder Structure](#folder-structure)
+- [Contributing](#contributing)
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+To get started with this project, clone the repository and install the dependencies:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+git clone https://github.com/your-username/rhf-demo.git
+cd rhf-demo
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Usage
+
+To run the development server:
+
+```bash
+npm run dev
+```
+
+Open your browser and navigate to `http://localhost:5173` to see the application in action.
+
+To build the project for production:
+
+```bash
+npm run build
+```
+
+To preview the production build:
+
+```bash
+npm run preview
+```
+
+## Scripts
+
+- `dev`: Runs the development server using Vite.
+- `build`: Builds the project using TypeScript compiler and Vite.
+- `lint`: Runs ESLint to check for linting issues.
+- `preview`: Previews the production build.
+
+## Technologies Used
+
+- `React`: A JavaScript library for building user interfaces.
+- `TypeScript`: A typed superset of JavaScript that compiles to plain JavaScript.
+- `Vite`: A build tool that aims to provide a faster and leaner development experience for modern web projects.
+- `React Hook Form`: A performant, flexible, and extensible form library for React.
+- `Yup`: A JavaScript schema builder for value parsing and validation.
+- `Emotion`: A library designed for writing CSS styles with JavaScript.
+- `Material-UI (MUI)`: React components for faster and easier web development.
+
+## Folder Structure
+
+The project structure is as follows:
+
+rhf-demo/
+├── node_modules/
+├── public/
+├── src/
+│ ├── components/
+│ ├── hooks/
+│ ├── pages/
+│ ├── App.tsx
+│ ├── main.tsx
+│ └── index.css
+├── .eslintrc.cjs
+├── .gitignore
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+
+- **components/**: Contains reusable React components.
+- **hooks/**: Contains custom React hooks.
+- **pages/**: Contains page components for different routes.
+- **App.tsx**: The root component of the application.
+- **main.tsx**: The entry point of the application.
+- **index.css**: Global CSS styles.
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions or improvements, feel free to create a pull request or open an issue.
+
+- Fork the repository.
+- Create a new branch (`git checkout -b feature/your-feature`).
+- Commit your changes (`git commit -m 'Add some feature'`).
+- Push to the branch (`git push origin feature/your-feature`).
+- Open a pull request
