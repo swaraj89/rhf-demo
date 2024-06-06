@@ -64,23 +64,35 @@ npm run preview
 
 The project structure is as follows:
 
+```bash
 rhf-demo/
-├── node_modules/
-├── public/
-├── src/
-│ ├── components/
-│ ├── hooks/
-│ ├── pages/
-│ ├── App.tsx
-│ ├── main.tsx
-│ └── index.css
-├── .eslintrc.cjs
-├── .gitignore
+├── README.md
 ├── index.html
+├── package-lock.json
 ├── package.json
+├── public
+│   └── vite.svg
+├── src
+│   ├── App.css
+│   ├── App.tsx
+│   ├── assets
+│   │   └── react.svg
+│   ├── components
+│   │   └── hook-form
+│   │       ├── FormProvider.tsx
+│   │       ├── RHFCheckbox.tsx
+│   │       ├── RHFSelect.tsx
+│   │       ├── RHFTextField.tsx
+│   │       └── index.ts
+│   ├── index.css
+│   ├── main.tsx
+│   ├── pages
+│   │   └── Demo.tsx
+│   └── vite-env.d.ts
 ├── tsconfig.json
-├── vite.config.ts
-└── README.md
+├── tsconfig.node.json
+└── vite.config.ts
+```
 
 - **components/**: Contains reusable React components.
 - **hooks/**: Contains custom React hooks.
